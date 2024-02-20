@@ -4,3 +4,7 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"AISTATS":
+  url: https://www.aistats.org/
+  color: "#ff6600"
