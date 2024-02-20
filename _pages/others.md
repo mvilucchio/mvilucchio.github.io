@@ -7,4 +7,4 @@ nav: true
 nav_order: 10
 ---
 
-{% include custom.grid %}
+<!-- {% include custom.grid %} -->
