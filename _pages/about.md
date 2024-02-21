@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD Candidate @ <a href='https://www.epfl.ch/labs/idephics/'>IdePHICS</a> @ <a href='https://www.epfl.ch/en/'>EPFL</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ELD 330,</p>
+    <p>Rte Cantonale,</p>
+    <p>Lausanne, 1015, Switzerland</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts

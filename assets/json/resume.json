@@ -3,7 +3,7 @@
     "name": "Matteo Vilucchio",
     "label": "PhD Student",
     "image": "",
-    "email": "matteo.vilucchio@epfl.ch",
+    "email": "matteo (dot) vilucchio (at) epfl (dot) ch",
     "summary": "I am a PhD candidate at the IdePHICS laboratory at EPFL.",
     "location": {
       "address": "Rte Cantonale",
@@ -17,6 +17,7 @@
     {
       "name": "EPFL, Lausanne, Switzerland",
       "position": "PhD Candidate",
+      "location": "Lausanne, Switzerland",
       "url": "https://epfl.ch/",
       "startDate": "1933-01-01"
     }
@@ -28,8 +29,8 @@
       "url": "https://www.ens.psl.eu/",
       "area": "Theoretical Physics",
       "studyType": "Msc",
-      "startDate": "2022-06",
-      "endDate": "2020-09",
+      "startDate": "2020-09",
+      "endDate": "2022-06",
       "score": "15.8"
     },
     {
@@ -70,22 +71,22 @@
     {
       "language": "Italian",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "🇮🇹"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "🇺🇸"
     },
     {
       "language": "French",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "🇫🇷"
     },
     {
       "language": "Spanish",
       "fluency": "Basic",
-      "icon": ""
+      "icon": "🇪🇸"
     }
   ]
 }
