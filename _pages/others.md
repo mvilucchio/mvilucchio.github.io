@@ -7,7 +7,7 @@ nav: true
 nav_order: 10
 ---
 
-# Favorite Albums
+# Some Good Albums
 
 <div class="grid-library">
     {% for album in site.data.albums %}
@@ -21,3 +21,4 @@ nav_order: 10
         </div>
     {% endfor%}
 </div>
+

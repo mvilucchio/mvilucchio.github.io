@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Matteo Vilucchio
     - name: Date of Birth
-      value: 14th March 1879
+      value: 8th July 1998
     - name: Languages
-      value: English, German
+      value: English, Italian, French
 
 - title: Education
   type: time_table
