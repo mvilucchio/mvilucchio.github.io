@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-For the next two weeks I will attend the Winter School (Towards a theory for typical-case algorithmic hardness)[https://leshouches-algorithms.github.io/] in the beautiful Les Houches, France.
+For the next two weeks I will attend the Winter School [Towards a theory for typical-case algorithmic hardness](https://leshouches-algorithms.github.io/) in the beautiful Les Houches, France.
