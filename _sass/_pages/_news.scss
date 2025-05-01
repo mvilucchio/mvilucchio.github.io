@@ -1,0 +1,96 @@
+// News Archive Styles
+
+.news-archive {
+  width: 100%;
+  position: relative;
+  padding-left: 2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+  }
+  
+  .news-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--border-color);
+    }
+  }
+  
+  .news-date {
+    position: absolute;
+    left: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .news-date-inner {
+    width: 100%;
+  }
+  
+  .news-month {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  
+  .news-day {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .news-year {
+    display: block;
+    font-size: 0.7rem;
+  }
+  
+  .news-content {
+    padding-left: 1rem;
+  }
+  
+  .news-excerpt {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

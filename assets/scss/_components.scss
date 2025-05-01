@@ -1,0 +1,144 @@
+// Home page
+.home {
+  .intro {
+    margin-bottom: $spacing-unit * 3;
+    
+    img {
+      max-width: 200px;
+      border-radius: 50%;
+      float: right;
+      margin: 0 0 $spacing-unit * 2 $spacing-unit * 2;
+      
+      @media (max-width: $breakpoint-md) {
+        float: none;
+        display: block;
+        margin: 0 auto $spacing-unit * 2;
+      }
+    }
+  }
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    margin-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 2;
+    border-bottom: 1px solid $border-color;
+  }
+  
+  .news-date {
+    color: $dark-gray;
+    font-size: 0.9rem;
+  }
+}
+
+// Publications
+.publication {
+  margin-bottom: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+  border-bottom: 1px solid $border-color;
+  
+  h2 {
+    margin-bottom: $spacing-unit / 2;
+  }
+  
+  .authors {
+    margin-top: $spacing-unit / 2;
+  }
+  
+  .venue {
+    color: $dark-gray;
+  }
+  
+  .links {
+    margin-top: $spacing-unit;
+    
+    a {
+      display: inline-block;
+      margin-right: $spacing-unit;
+      padding: $spacing-unit / 3 $spacing-unit * 0.8;
+      background-color: $accent-color;
+      color: $white;
+      border-radius: 3px;
+    }
+  }
+}
+
+// CV
+.cv-section {
+  margin-bottom: $spacing-unit * 2;
+}
+
+.download-button {
+  margin: $spacing-unit * 2 0;
+}
+
+.button {
+  display: inline-block;
+  padding: $spacing-unit * 0.7 $spacing-unit * 1.5;
+  background-color: $accent-color;
+  color: $white;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+// Albums
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $spacing-unit * 2;
+  margin-top: $spacing-unit * 2;
+  
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.album-card {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .album-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .album-info {
+    padding: $spacing-unit;
+    
+    h3 {
+      margin-top: 0;
+      margin-bottom: $spacing-unit / 2;
+    }
+    
+    .artist {
+      margin-top: 0;
+      font-weight: bold;
+    }
+    
+    .year {
+      color: $dark-gray;
+      margin-top: $spacing-unit / 3;
+    }
+  }
+  
+  .listen-link {
+    display: inline-block;
+    margin-top: $spacing-unit;
+    padding: $spacing-unit / 3 $spacing-unit * 0.8;
+    background-color: $accent-color;
+    color: $white;
+    border-radius: 3px;
+  }
+}

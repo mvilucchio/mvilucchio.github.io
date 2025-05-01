@@ -1,0 +1,206 @@
+// CV Page Styles
+
+.cv-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  
+  h1 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Section Styling
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section-title {
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+  }
+}
+
+// Entry Styling
+.cv-entry {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.cv-entry-content {
+  flex: 1;
+}
+
+.cv-entry-image {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff !important; // Force white background for logos
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: #ffffff;
+  }
+}
+
+// For dark mode, ensure the logo container stays white
+[data-theme="dark"] .cv-entry-image,
+html[data-theme="dark"] .cv-entry-image,
+body[data-theme="dark"] .cv-entry-image,
+html[data-theme="dark"] body .cv-container .cv-section .cv-entry .cv-entry-image {
+  background-color: #ffffff !important;
+  border-color: #aaaaaa !important;
+}
+
+.cv-entry-header {
+  margin-bottom: 0.5rem;
+}
+
+.cv-entry-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.cv-entry-company {
+  font-style: italic;
+  color: var(--dark-gray);
+  margin-top: 0.2rem;
+}
+
+.cv-entry-period {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.cv-date {
+  display: inline-block;
+}
+
+.cv-entry-description {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+// Languages Grid
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem;
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.language-flag {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.language-details {
+  flex: 1;
+}
+
+.language-name {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.language-proficiency {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+// Responsive adjustments
+@media (max-width: $breakpoint-md) {
+  .languages-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  
+  .cv-entry-header {
+    flex-direction: column;
+  }
+  
+  .cv-entry {
+    flex-direction: row-reverse;
+  }
+  
+  .cv-entry-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cv-entry {
+    gap: 1rem;
+  }
+  
+  .cv-entry-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+}

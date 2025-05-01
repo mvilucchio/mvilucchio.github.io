@@ -1,0 +1,51 @@
+# Site settings
+title: Matteo Vilucchio
+firstname: Matteo
+lastname: Vilucchio
+email: matteo.vilucchio@epfl.ch
+description: >- 
+  PhD Student in Machine Learning and Statistical Physics at EFPL.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol, e.g. http://example.com
+# Social media usernames and IDs
+github_username: mvilucchio
+google_scholar_id: lu9hh14AAAAJ
+
+# Build settings
+markdown: kramdown
+theme: minima
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  news:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Default front matter settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/

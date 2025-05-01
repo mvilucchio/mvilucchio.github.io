@@ -1,0 +1,27 @@
+// Profile image styles
+.profile-image {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: none !important;
+  transform: none !important;
+  
+  &:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+// Profile container
+.profile-container {
+  margin-bottom: 2rem;
+  
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}

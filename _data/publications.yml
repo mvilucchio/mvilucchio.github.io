@@ -1,0 +1,78 @@
+- title: "Asymptotic Characterisation of the Performance of Robust Linear Regression in the Presence of Outliers"
+  authors: "Matteo Vilucchio, Emanuele Troiani, Vittorio Erba, Florent Krzakala"
+  venue: "The 27th International Conference on Artificial Intelligence and Statistics"
+  year: 2024
+  type: "publication"
+  pdf: "https://proceedings.mlr.press/v238/vilucchio24a/vilucchio24a.pdf"
+  abstract: "We study robust linear regression in high-dimension, when both the dimension and the number of data points diverge with a fixed ratio, and study a data model that includes outliers. We provide exact asymptotics for the performances of the empirical risk minimisation (ERM) using L2-regularised L2, L1, and Huber losses, which are the standard approach to such problems. We focus on two metrics for the performance: the generalisation error to similar datasets with outliers, and the estimation error of the original, unpolluted function. Our results are compared with the information theoretic Bayes-optimal estimation bound. For the generalization error, we find that optimally-regularised ERM is asymptotically consistent in the large sample complexity limit if one perform a simple calibration, and compute the rates of convergence. For the estimation error however, we show that due to a norm calibration mismatch, the consistency of the estimator requires an oracle estimate of the optimal norm, or the presence of a cross-validation set not corrupted by the outliers. We examine in detail how performance depends on the loss function and on the degree of outlier corruption in the training set and identify a region of parameters where the optimal performance of the Huber loss is identical to that of the L2 loss, offering insights into the use cases of different loss functions."
+  code: "https://github.com/IdePHICS/RobustRegression"
+  bibtex: "@inproceedings{vilucchio2024asymptotic,
+    title={Asymptotic characterisation of the performance of robust linear regression in the presence of outliers},
+    author={Vilucchio, Matteo and Troiani, Emanuele and Erba, Vittorio and Krzakala, Florent},
+    booktitle={International Conference on Artificial Intelligence and Statistics},
+    pages={811--819},
+    year={2024},
+    organization={PMLR}
+  }"
+
+- title: "A High Dimensional Statistical Model for Adversarial Training: Geometry and Trade-offs"
+  authors: "Kasimir Tanner, Matteo Vilucchio, Bruno Loureiro, Florent Krzakala"
+  venue: "The 28th International Conference on Artificial Intelligence and Statistics"
+  year: 2025
+  type: "publication"
+  # pdf: "https://proceedings.mlr.press/v238/vilucchio24a/vilucchio24a.pdf"
+  abstract: "This work investigates adversarial training in the context of margin-based linear classifiers in the high-dimensional regime where the dimension d and the number of data points n diverge with a fixed ratio. We introduce a tractable mathematical model where the interplay between the data and adversarial attacker geometries can be studied, while capturing the core phenomenology observed in the adversarial robustness literature. Our main theoretical contribution is an exact asymptotic description of the sufficient statistics for the adversarial empirical risk minimiser, under generic convex and non-increasing losses for a Block Feature Model. Our result allow us to precisely characterise which directions in the data are associated with a higher generalisation/robustness trade-off, as defined by a robustness and a usefulness metric. We show that the the presence of multiple different feature types is crucial to the high sample complexity performances of adversarial training. In particular, we unveil the existence of directions which can be defended without penalising accuracy. Finally, we show the advantage of defending non-robust features during training, identifying a uniform protection as an inherently effective defence mechanism."
+  code: "https://github.com/IdePHICS/Adversarial-Setting"
+  # bibtex: "@inproceedings{vilucchio2024asymptotic,
+  #   title={Asymptotic characterisation of the performance of robust linear regression in the presence of outliers},
+  #   author={Vilucchio, Matteo and Troiani, Emanuele and Erba, Vittorio and Krzakala, Florent},
+  #   booktitle={International Conference on Artificial Intelligence and Statistics},
+  #   pages={811--819},
+  #   year={2024},
+  #   organization={PMLR}
+  # }"
+
+- title: "Asymptotics of Non-Convex Generalized Linear Models in High-Dimensions: A proof of the replica formula"
+  authors: "Matteo Vilucchio, Yatin Dandi, Cedric Gerbelot, Florent Krzakala"
+  venue: "arXiv"
+  year: 2025
+  type: "preprint"
+  arxiv: "2502.20003"
+  pdf: "https://arxiv.org/pdf/2502.20003"
+  abstract: "The analytic characterization of the high-dimensional behavior of optimization for Generalized Linear Models (GLMs) with Gaussian data has been a central focus in statistics and probability in recent years. While convex cases, such as the LASSO, ridge regression, and logistic regression, have been extensively studied using a variety of techniques, the non-convex case remains far less understood despite its significance. A non-rigorous statistical physics framework has provided remarkable predictions for the behavior of high-dimensional optimization problems, but rigorously establishing their validity for non-convex problems has remained a fundamental challenge. In this work, we address this challenge by developing a systematic framework that rigorously proves replica-symmetric formulas for non-convex GLMs and precisely determines the conditions under which these formulas are valid. Remarkably, the rigorous replica-symmetric predictions align exactly with the conjectures made by physicists, and the so-called replicon condition. The originality of our approach lies in connecting two powerful theoretical tools: the Gaussian Min-Max Theorem, which we use to provide precise lower bounds, and Approximate Message Passing (AMP), which is shown to achieve these bounds algorithmically. We demonstrate the utility of this framework through significant applications: (i) by proving the optimality of the Tukey loss over the more commonly used Huber loss under a ε contaminated data model, (ii) establishing the optimality of negative regularization in high-dimensional non-convex regression and (iii) characterizing the performance limits of linearized AMP algorithms. By rigorously validating statistical physics predictions in non-convex settings, we aim to open new pathways for analyzing increasingly complex optimization landscapes beyond the convex regime."
+  bibtex: "@article{vilucchio2025asymptotics,
+    title={Asymptotics of non-convex generalized linear models in high-dimensions: A proof of the replica formula},
+    author={Vilucchio, Matteo and Dandi, Yatin and Gerbelot, Cedric and Krzakala, Florent},
+    journal={arXiv preprint arXiv:2502.20003},
+    year={2025}
+  }"
+
+- title: "On the Geometry of Regularization in Adversarial Training: High-Dimensional Asymptotics and Generalization Bounds"
+  authors: "Matteo Vilucchio, Nikolaos Tsilivis, Bruno Loureiro, Julia Kempe"
+  venue: "arXiv"
+  year: 2024
+  type: "preprint"
+  arxiv: "2410.16073"
+  pdf: "https://arxiv.org/pdf/2410.16073"
+  abstract: "Regularization, whether explicit in terms of a penalty in the loss or implicit in the choice of algorithm, is a cornerstone of modern machine learning. Indeed, controlling the complexity of the model class is particularly important when data is scarce, noisy or contaminated, as it translates a statistical belief on the underlying structure of the data. This work investigates the question of how to choose the regularization norm in the context of high-dimensional adversarial training for binary classification. To this end, we first derive an exact asymptotic description of the robust, regularized empirical risk minimizer for various types of adversarial attacks and regularization norms (including non-Lp norms). We complement this analysis with a uniform convergence analysis, deriving bounds on the Rademacher Complexity for this class of problems. Leveraging our theoretical results, we quantitatively characterize the relationship between perturbation size and the optimal choice of norm, confirming the intuition that, in the data scarce regime, the type of regularization becomes increasingly important for adversarial training as perturbations grow in size."
+  bibtex: "@article{vilucchio2024geometry,
+    title={On the Geometry of Regularization in Adversarial Training: High-Dimensional Asymptotics and Generalization Bounds},
+    author={Vilucchio, Matteo and Tsilivis, Nikolaos and Loureiro, Bruno and Kempe, Julia},
+    journal={arXiv preprint arXiv:2410.16073},
+    year={2024}
+  }"
+
+- title: "Genealogical Population-Based Training for Hyperparameter Optimization"
+  authors: "Antoine Scardigli, Paul Fournier, Matteo Vilucchio, David Naccache"
+  venue: "arXiv"
+  year: 2021
+  type: "preprint"
+  arxiv: "2109.14925"
+  pdf: "https://arxiv.org/pdf/2109.14925"
+  abstract: "Regularization, whether explicit in terms of a penalty in the loss or implicit in the choice of algorithm, is a cornerstone of modern machine learning. Indeed, controlling the complexity of the model class is particularly important when data is scarce, noisy or contaminated, as it translates a statistical belief on the underlying structure of the data. This work investigates the question of how to choose the regularization norm in the context of high-dimensional adversarial training for binary classification. To this end, we first derive an exact asymptotic description of the robust, regularized empirical risk minimizer for various types of adversarial attacks and regularization norms (including non-Lp norms). We complement this analysis with a uniform convergence analysis, deriving bounds on the Rademacher Complexity for this class of problems. Leveraging our theoretical results, we quantitatively characterize the relationship between perturbation size and the optimal choice of norm, confirming the intuition that, in the data scarce regime, the type of regularization becomes increasingly important for adversarial training as perturbations grow in size."
+  bibtex: "@article{scardigli2021genealogical,
+    title={Genealogical Population-Based Training for Hyperparameter Optimization},
+    author={Scardigli, Antoine and Fournier, Paul and Vilucchio, Matteo and Naccache, David},
+    journal={arXiv preprint arXiv:2109.14925},
+    year={2021}
+  }"

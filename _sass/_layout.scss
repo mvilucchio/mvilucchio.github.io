@@ -1,0 +1,179 @@
+// Header and navigation
+header {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  padding: $spacing-unit 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  
+  /* Glass effect for dark mode */
+  html[data-theme="dark"] & {
+    background-color: rgba(20, 20, 20, 0.3);
+  }
+  
+  &.header-scrolled {
+    padding: ($spacing-unit * 0.5) 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Glass effect for dark mode when scrolled */
+    html[data-theme="dark"] & {
+      background-color: rgba(20, 20, 20, 0.7);
+    }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+    /* Home page styling when h1 is empty */
+    .home-page & h1:empty {
+      display: none;
+    }
+    
+    .home-page & {
+      justify-content: flex-end;
+    }
+    
+    h1 {
+      margin: 0;
+      
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+        
+        .firstname {
+          font-weight: 700;
+        }
+        
+        .lastname {
+          font-weight: 400;
+        }
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      
+      li {
+        margin-left: $spacing-unit * 2;
+        
+        a {
+          color: var(--text-color);
+          text-decoration: none;
+          position: relative;
+          transition: opacity 0.2s ease;
+          padding: 0.3rem 0;
+          
+          &:hover {
+            opacity: 0.8;
+            text-decoration: none; /* Prevent default underline */
+          }
+          
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+          }
+          
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Main content
+main {
+  padding: $spacing-unit * 3 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// Footer
+footer {
+  margin-top: $spacing-unit * 3;
+  padding: $spacing-unit * 3 0;
+  background-color: var(--light-gray);
+  text-align: center;
+  color: var(--dark-gray);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+// Responsive design
+@media (max-width: $breakpoint-md) {
+  header {
+    padding: $spacing-unit * 0.8 0;
+    
+    &.header-scrolled {
+      padding: ($spacing-unit * 0.6) 0;
+    }
+    
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 1rem;
+      
+      h1 {
+        margin-bottom: $spacing-unit * 0.5;
+      }
+      
+      ul {
+        margin-top: $spacing-unit * 0.5;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        li {
+          margin: 0 $spacing-unit $spacing-unit / 2 0;
+        }
+      }
+    }
+  }
+  
+  .site-content {
+    padding: 0 1rem;
+  }
+  
+  footer .footer-content {
+    padding: 0 1rem;
+  }
+}
+
+// Import page-specific layouts
+@import "_pages/home";
+@import "_pages/news";
+@import "_pages/publications";

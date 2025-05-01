@@ -1,0 +1,69 @@
+# Work Experience
+work_experience:
+  - position: "Summer Quantitative Research Intern"
+    company: "GRsearch"
+    location: "London, UK"
+    start_date: "2025-06"
+    end_date: "2025-09"
+    # description: "Worked on natural language processing models. Implemented a sentiment analysis system with 85% accuracy. Collaborated with a team of 5 engineers."
+    image: "/assets/images/cv/gresearch.png"
+
+  - position: "Teaching Assistant"
+    company: "IdePHICS Lab, EPFL, Switzerland"
+    location: "City, Country"
+    start_date: "2022-09"
+    end_date: "Present"
+    description: "Assisted in teaching the course 'Quantum Mechanics II' and preparing the course 'Statistical Physics'. Supervised students: Kasimir Tanner, Mateo Rossignol."
+    image: "/assets/images/cv/idephics.jpg"
+
+  - position: "Machine Learning Summer Intern"
+    company: "DTOne"
+    location: "Remote"
+    start_date: "2021-06"
+    end_date: "2021-09"
+    description: "Worked on developing a machine learning model for customer segmentation."
+    image: "/assets/images/cv/dtone.png"
+
+# Education
+education:
+  - degree: "PhD in Computer Science"
+    institution: "Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland"
+    location: "City, Country"
+    start_date: "2022-09"
+    end_date: "Present"
+    # description: "Focus on high dimensional statistics."
+    image: "/assets/images/cv/epfl.png"
+    
+  - degree: "MSc in Theoretical Physics"
+    institution: "Ecole Normale Supérieure, Paris, France"
+    location: "City, Country"
+    start_date: "2020-09"
+    end_date: "2022-07"
+    # description: "Bien. Minor in Computer Science. "
+    image: "/assets/images/cv/ens.png"
+    
+  - degree: "BSc in Physics"
+    institution: "University of Pisa, Pisa, Italy"
+    location: "City, Country"
+    start_date: "2017-09"
+    end_date: "2020-06"
+    # description: "110L/110."
+    image: "/assets/images/cv/univ-pisa.png"
+
+# Languages
+languages:
+  - name: "Italian"
+    proficiency: "Native"
+    flag: "🇮🇹"
+    
+  - name: "English"
+    proficiency: "Fluent (C2)"
+    flag: "🇬🇧"
+    
+  - name: "French"
+    proficiency: "Intermediate (B1)"
+    flag: "🇫🇷"
+    
+  - name: "Spanish"
+    proficiency: "Basic (A2)"
+    flag: "🇪🇸"

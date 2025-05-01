@@ -1,0 +1,72 @@
+// Header and navigation
+header {
+  background-color: $primary-color;
+  color: $white;
+  padding: $spacing-unit $spacing-unit * 2;
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1 {
+      margin: 0;
+      
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        margin-left: $spacing-unit * 2;
+        
+        a {
+          color: $white;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Main content
+main {
+  padding: $spacing-unit * 2;
+}
+
+// Footer
+footer {
+  margin-top: $spacing-unit * 3;
+  padding: $spacing-unit * 2;
+  background-color: $light-gray;
+  text-align: center;
+  color: $dark-gray;
+}
+
+// Responsive design
+@media (max-width: $breakpoint-md) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    ul {
+      margin-top: $spacing-unit;
+      flex-wrap: wrap;
+      
+      li {
+        margin: 0 $spacing-unit $spacing-unit / 2 0;
+      }
+    }
+  }
+}

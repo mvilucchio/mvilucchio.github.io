@@ -1,0 +1,309 @@
+// Modern Home Page Styles
+
+// Home container
+.home {
+  width: 100%;
+}
+
+// Hero section
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    
+    .firstname {
+      font-weight: 700;
+    }
+    
+    .lastname {
+      font-weight: 400;
+    }
+  }
+  
+  p {
+    margin: 0 0 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+.hero-content {
+  width: 100%;
+}
+
+// About section
+.about-section {
+  width: 100%;
+  margin: 0 auto 4rem;
+  padding: 0;
+}
+
+// News section
+.news-section {
+  width: 100%;
+  margin: 0 auto 4rem;
+  padding: 0;
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+.news-timeline {
+  position: relative;
+  padding-left: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--border-color);
+  }
+}
+
+.news-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.news-date {
+  position: absolute;
+  left: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.news-date-inner {
+  width: 100%;
+}
+
+.news-month {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.news-day {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.news-year {
+  display: block;
+  font-size: 0.7rem;
+}
+
+.news-content {
+  padding-left: 1rem;
+}
+
+.news-excerpt {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// View All News button
+.view-all-news {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.view-all-button {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  
+  &:hover {
+    background-color: var(--light-gray);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Social buttons
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 4rem;
+  padding: 0;
+}
+
+.social-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  
+  h2 {
+    color: var(--text-color);
+  }
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  &.scholar {
+    color: #4285f4;
+    border-color: #4285f4;
+    
+    &:hover {
+      background-color: #4285f4;
+      color: white;
+    }
+  }
+  
+  &.github {
+    color: #333;
+    border-color: #333;
+    
+    &:hover {
+      background-color: #333;
+      color: white;
+    }
+  }
+  
+  &.email {
+    color: #ea4335;
+    border-color: #ea4335;
+    
+    &:hover {
+      background-color: #ea4335;
+      color: white;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 0;
+  }
+  
+  .hero-content {
+    flex-grow: 1;
+  }
+  
+  .hero-section p {
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-button {
+    width: 80%;
+    justify-content: center;
+  }
+}

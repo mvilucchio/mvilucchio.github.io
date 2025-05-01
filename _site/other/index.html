@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matteo Vilucchio">
+  <title>Other - Matteo Vilucchio</title>
+  <!-- Apply theme immediately to prevent flash of wrong theme -->
+  <script src="/assets/js/util.js"></script>
+  <script>
+    // Apply theme immediately to prevent flash
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/css/main.css?v=1.0.0">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Other | Matteo Vilucchio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Other" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PhD Student in Machine Learning and Statistical Physics at EFPL." />
+<meta property="og:description" content="PhD Student in Machine Learning and Statistical Physics at EFPL." />
+<link rel="canonical" href="http://localhost:4000/other/" />
+<meta property="og:url" content="http://localhost:4000/other/" />
+<meta property="og:site_name" content="Matteo Vilucchio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Other" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"PhD Student in Machine Learning and Statistical Physics at EFPL.","headline":"Other","url":"http://localhost:4000/other/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body class="">
+  <header>
+    <nav>
+      <h1>
+        
+          <a href="/">
+            <span class="firstname">Matteo</span> <span class="lastname">Vilucchio</span>
+          </a>
+        
+      </h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/publications/">Publications</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/other/">Other</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-content">
+    <h1 id="other-interests">Other Interests</h1>
+
+<p>Beyond my academic work, I have several other interests and projects.</p>
+
+<section id="album-section">
+  <h2>Favorite Albums</h2>
+  <p>A collection of albums that have been influential to me across various genres. Hover over any album cover to see details.</p>
+
+  <div id="album-container">
+    <!-- Albums will be dynamically inserted by JavaScript -->
+  </div>
+</section>
+
+<script>
+  // Store album data for JavaScript access
+  window.siteAlbums = [
+    
+    {
+      title: "Animals",
+      artist: "Pink Floyd",
+      year: 1977,
+      cover: "http://coverartarchive.org/release/b249399e-77a7-3bb5-ba51-7368506e6f02/8215817116-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Wish You Were Here",
+      artist: "Pink Floyd",
+      year: 1975,
+      cover: "http://coverartarchive.org/release/f4a8aa35-da90-33d8-9307-c630d38a2bed/1611519564-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "The Dark Side of the Moon",
+      artist: "Pink Floyd",
+      year: 1973,
+      cover: "http://coverartarchive.org/release/b84ee12a-09ef-421b-82de-0441a926375b/1611507818-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Twenty One Pilots",
+      artist: "Twenty One Pilots",
+      year: 2009,
+      cover: "http://coverartarchive.org/release/f962ee2d-41cd-4a47-8f8c-dc402eacfaf3/10077631133-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Regional at Best",
+      artist: "Twenty One Pilots",
+      year: 2011,
+      cover: "http://coverartarchive.org/release/f4a3f76f-959e-46e9-bfdb-59d8ba3066e1/3742879315-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Vessel",
+      artist: "Twenty One Pilots",
+      year: 2013,
+      cover: "http://coverartarchive.org/release/b349781c-fcb6-40d0-a141-a2fb8e7242e3/10164434730-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Blurryface",
+      artist: "Twenty One Pilots",
+      year: 2015,
+      cover: "http://coverartarchive.org/release/a5b0cee4-a5e3-4ab8-9e34-6f2d59951444/16511262758-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Trench",
+      artist: "Twenty One Pilots",
+      year: 2018,
+      cover: "http://coverartarchive.org/release/c926622f-8a26-40e6-834a-b8c8bf82d0d7/27605560310-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Come uccidere un usignolo",
+      artist: "Ernia",
+      year: 2017,
+      cover: "http://coverartarchive.org/release/6f1bedda-6f52-4f01-aef1-7367c681d9a6/21154405747-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "68",
+      artist: "Ernia",
+      year: 2018,
+      cover: "http://coverartarchive.org/release/c72baa34-099d-4db7-af0d-0a41e6214835/21154381578-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Autumn",
+      artist: "Coldworld",
+      year: 2016,
+      cover: "http://coverartarchive.org/release/3bad8c8d-1e87-4c74-b7ba-1338da7b655f/13909053876-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "The Island Chainsaw Massacre",
+      artist: "Salmo",
+      year: 2011,
+      cover: "http://coverartarchive.org/release/c760e637-e7b8-4060-8c9b-1bd6a62d9829/10159781482-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Midnite",
+      artist: "Salmo",
+      year: 2013,
+      cover: "http://coverartarchive.org/release/64d6423a-aab3-4a3d-89b4-1839f368614e/3737824397-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Hellvisback",
+      artist: "Salmo",
+      year: 2016,
+      cover: "http://coverartarchive.org/release/a69f630f-4bce-4626-9b41-d3f8d91fa823/18901752111-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Playlist",
+      artist: "Salmo",
+      year: 2018,
+      cover: "http://coverartarchive.org/release/aea44f54-6e1b-4b4e-8901-2f8251c38728/21441659682-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Turbe giovanili",
+      artist: "Fabri Fibra",
+      year: 2002,
+      cover: "http://coverartarchive.org/release/939af005-0a97-4cd5-b3de-d9e2b3fad64f/24645607263-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Mr. Simpatia",
+      artist: "Fabri Fibra",
+      year: 2004,
+      cover: "http://coverartarchive.org/release/9be6c4f6-ae31-4a27-af82-3cd053b36f9f/17469196523-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Tradimento",
+      artist: "Fabri Fibra",
+      year: 2006,
+      cover: "http://coverartarchive.org/release/6695ae56-b3ec-4935-aedb-3c47bbc76ac8/3913182455-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Bugiardo",
+      artist: "Fabri Fibra",
+      year: 2007,
+      cover: "http://coverartarchive.org/release/6b17ecbc-9bb2-44a4-b99a-49286d799f3c/5242646330-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Controcultura",
+      artist: "Fabri Fibra",
+      year: 2010,
+      cover: "http://coverartarchive.org/release/8f6725ec-cfa3-4b9a-ac3c-0db5aca912ea/27735079284-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Guerra e pace",
+      artist: "Fabri Fibra",
+      year: 2013,
+      cover: "http://coverartarchive.org/release/6825acbf-7803-42ed-bac4-0f4433888a42/3833276007-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Squallor",
+      artist: "Fabri Fibra",
+      year: 2015,
+      cover: "http://coverartarchive.org/release/7268cece-5d2e-4d20-8aa0-308ba3066548/24406740877-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Fenomeno",
+      artist: "Fabri Fibra",
+      year: 2017,
+      cover: "http://coverartarchive.org/release/dd644472-fb71-470b-b4f6-91f973cabd70/16550448527-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Orange County California",
+      artist: "Tedua",
+      year: 2017,
+      cover: "http://coverartarchive.org/release/e5171671-31fd-4da5-b4a4-43dc22e388ec/16437966365-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Mowgli",
+      artist: "Tedua",
+      year: 2018,
+      cover: "http://coverartarchive.org/release/5614d1c3-7875-442d-baaa-8fcaea83a452/19496800166-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Unplugged",
+      artist: "Eric Clapton",
+      year: 1992,
+      cover: "http://coverartarchive.org/release/4375e1ad-07f3-4766-b2f1-e541961e251c/23459040946-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Dalla",
+      artist: "Lucio Dalla",
+      year: 1980,
+      cover: "http://coverartarchive.org/release/e04b257b-b703-4c6a-813b-adf65776f375/7370017569-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Bugie",
+      artist: "Lucio Dalla",
+      year: 1986,
+      cover: "http://coverartarchive.org/release/19a7146a-8e65-4512-820a-a3a505cddf16/12585411790-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Banana Republic",
+      artist: "Lucio Dalla",
+      year: 1979,
+      cover: "http://coverartarchive.org/release/6c52483a-1484-4739-b115-386ae02a4517/4764334447-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Rimmel",
+      artist: "Francesco De Gregori",
+      year: 1975,
+      cover: "http://coverartarchive.org/release/02135af8-9888-4c5a-b8d9-7d9220e2d956/7801497494-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "De Gregori",
+      artist: "Francesco De Gregori",
+      year: 1978,
+      cover: "http://coverartarchive.org/release/0db423c4-839d-49bc-9ee2-38aa2df7a32d/15024366048-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Titanic",
+      artist: "Francesco De Gregori",
+      year: 1982,
+      cover: "http://coverartarchive.org/release/87274cc1-90c5-48b4-bcbc-699f8c2bc512/13269763212-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Storia di un impiegato",
+      artist: "Fabrizio De André",
+      year: 1973,
+      cover: "http://coverartarchive.org/release/daecf260-5f49-359e-82c6-d606dd52f5e3/7801411441-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Canzoni",
+      artist: "Fabrizio De André",
+      year: 1974,
+      cover: "http://coverartarchive.org/release/858535e6-e1bf-42f0-8f84-f3ea9907c0d0/12776996373-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Hunky Dory",
+      artist: "David Bowie",
+      year: 1971,
+      cover: "http://coverartarchive.org/release/4800c809-f22f-4aee-8533-d3fb5884ac5f/12550656175-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "The Upper Hand",
+      artist: "Alltta",
+      year: 2017,
+      cover: "http://coverartarchive.org/release/91600b5f-0f94-45e9-85c6-70b0d7a7753a/15975870240-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Facing Giants",
+      artist: "Alltta",
+      year: 2017,
+      cover: "http://coverartarchive.org/release/92e6f5b5-e140-455c-a17d-55acdeb585e0/18437791694-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "The Wall",
+      artist: "Pink Floyd",
+      year: 1979,
+      cover: "https://coverartarchive.org/release/93c4f215-15ae-34a2-981a-9a5fbd700004/14428285805-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Lucio Dalla",
+      artist: "Lucio Dalla",
+      year: 1979,
+      cover: "https://coverartarchive.org/release/26d33b74-7cf8-4ffd-8cea-dc868d16ebee/18171380095-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Vol. 1",
+      artist: "Fabrizio De André",
+      year: 1967,
+      cover: "https://coverartarchive.org/release-group/a9f0a03f-d9e0-3cd7-9f6f-7644c21500ea/front-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Vol. 3",
+      artist: "Fabrizio De André",
+      year: 1968,
+      cover: "https://coverartarchive.org/release/43013380-a909-3572-8ab3-8f362fa0bd1b/22280122734-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Dasein sollen",
+      artist: "Rkomi",
+      year: 2016,
+      cover: "https://coverartarchive.org/release/fe8c4b0c-6be5-429c-a31b-dec9e8019731/17062500185-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "MM..FOOD",
+      artist: "MF DOOM",
+      year: 2004,
+      cover: "https://coverartarchive.org/release-group/ec84ab32-eb41-3d91-a099-7a01c72f21d2/front-500.jpg",
+      link: null
+    },
+    
+    {
+      title: "...ma cosa vuoi che sia una canzone",
+      artist: "Vasco Rossi",
+      year: 1978,
+      cover: "https://ia800400.us.archive.org/14/items/mbid-dc7bac78-2567-4397-a7c2-28a3821601b2/mbid-dc7bac78-2567-4397-a7c2-28a3821601b2-24611902769_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Colpa d'Alfredo",
+      artist: "Vasco Rossi",
+      year: 1980,
+      cover: "https://ia803103.us.archive.org/20/items/mbid-8127fac2-5a77-368c-b72d-dc2aba1d4fc9/mbid-8127fac2-5a77-368c-b72d-dc2aba1d4fc9-21145716062_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Siamo solo noi",
+      artist: "Vasco Rossi",
+      year: 1981,
+      cover: "https://ia600301.us.archive.org/10/items/mbid-13884df4-9086-4fa6-8d80-41941a8ba1e6/mbid-13884df4-9086-4fa6-8d80-41941a8ba1e6-9175685490_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Vado al Massimo",
+      artist: "Vasco Rossi",
+      year: 1982,
+      cover: "https://ia800904.us.archive.org/13/items/mbid-6121aa2e-0553-30b8-b573-ac2404efcbe5/mbid-6121aa2e-0553-30b8-b573-ac2404efcbe5-8812272363_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Bollicine",
+      artist: "Vasco Rossi",
+      year: 1983,
+      cover: "https://ia903109.us.archive.org/25/items/mbid-949ad014-5f1e-49e7-90fd-e17165f7f012/mbid-949ad014-5f1e-49e7-90fd-e17165f7f012-24518809080_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Cosa Succede in Città",
+      artist: "Vasco Rossi",
+      year: 1985,
+      cover: "https://ia600808.us.archive.org/14/items/mbid-e54b015b-f107-3e89-9a62-4141f486bd3f/mbid-e54b015b-f107-3e89-9a62-4141f486bd3f-8812236924_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "C'è chi dice no",
+      artist: "Vasco Rossi",
+      year: 1987,
+      cover: "https://ia802903.us.archive.org/15/items/mbid-3e73a69c-fc4e-40f5-a3f8-42c3103b2933/mbid-3e73a69c-fc4e-40f5-a3f8-42c3103b2933-21163353916_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Nessun pericolo... per te",
+      artist: "Vasco Rossi",
+      year: 1996,
+      cover: "https://ia803208.us.archive.org/14/items/mbid-8c665681-26b7-4d62-8461-706cbb519237/mbid-8c665681-26b7-4d62-8461-706cbb519237-21182331592_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Homework",
+      artist: "Daft Punk",
+      year: 1997,
+      cover: "https://ia800304.us.archive.org/7/items/mbid-770b9b80-10e1-4297-b1fd-46ad0dbb0305/mbid-770b9b80-10e1-4297-b1fd-46ad0dbb0305-1148987477_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Discovery",
+      artist: "Daft Punk",
+      year: 2001,
+      cover: "https://ia800700.us.archive.org/10/items/mbid-d073287b-d1bd-4f11-a933-a4386f8cf701/mbid-d073287b-d1bd-4f11-a933-a4386f8cf701-16983025581_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Human After All",
+      artist: "Daft Punk",
+      year: 2005,
+      cover: "https://ia800604.us.archive.org/25/items/mbid-77a2f001-ae10-45fe-8d56-6069edfe20fe/mbid-77a2f001-ae10-45fe-8d56-6069edfe20fe-1149015431_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Random Access Memories",
+      artist: "Daft Punk",
+      year: 2013,
+      cover: "https://ia800702.us.archive.org/31/items/mbid-5000a285-b67e-4cfc-b54b-2b98f1810d2e/mbid-5000a285-b67e-4cfc-b54b-2b98f1810d2e-4173777352_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Musica Cicatrene",
+      artist: "Mezzosangue",
+      year: 2012,
+      cover: "https://ia800901.us.archive.org/17/items/mbid-0ddab4d5-64d1-4d52-ba4e-4a8d4436c737/mbid-0ddab4d5-64d1-4d52-ba4e-4a8d4436c737-5849068302_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Soul of a Supertramp",
+      artist: "Mezzosangue",
+      year: 2015,
+      cover: "https://ia801200.us.archive.org/33/items/mbid-d267d407-1ecd-4f2f-a3a3-d87c1c334c82/mbid-d267d407-1ecd-4f2f-a3a3-d87c1c334c82-14182198417_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Maigre",
+      artist: "Igorrr & Rub My Dear",
+      year: 2014,
+      cover: "https://ia802205.us.archive.org/11/items/mbid-5029df61-8394-4ec6-bf77-53130e9f65e6/mbid-5029df61-8394-4ec6-bf77-53130e9f65e6-9113374346_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "73 Touches",
+      artist: "Hocus Pocus",
+      year: 2005,
+      cover: "https://ia802800.us.archive.org/23/items/mbid-d23935c0-5a92-4e23-84cf-aa1a2e131b75/mbid-d23935c0-5a92-4e23-84cf-aa1a2e131b75-1189945237_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Kinotto",
+      artist: "Skiantos",
+      year: 1979,
+      cover: "https://ia800901.us.archive.org/10/items/mbid-dd242651-eb17-451f-a50a-e02f9775ae28/mbid-dd242651-eb17-451f-a50a-e02f9775ae28-10815976808_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Gattini",
+      artist: "Elio e le Storie Tese",
+      year: 2009,
+      cover: "https://ia804504.us.archive.org/22/items/mbid-1ecdf453-b3bc-4025-9aaf-c428ce9385dd/mbid-1ecdf453-b3bc-4025-9aaf-c428ce9385dd-32633113946_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Madvillany",
+      artist: "Madvillain",
+      year: 2004,
+      cover: "https://ia800706.us.archive.org/19/items/mbid-a63ffa0d-d6f0-4941-9659-8e199ca14a60/mbid-a63ffa0d-d6f0-4941-9659-8e199ca14a60-4516429761_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Io Non Ho Paura",
+      artist: "Ernia",
+      year: 2022,
+      cover: "https://dn721902.ca.archive.org/0/items/mbid-0fb8705f-2e28-4a8f-8e56-f72d447dc966/mbid-0fb8705f-2e28-4a8f-8e56-f72d447dc966-34686698730_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Gemelli",
+      artist: "Ernia",
+      year: 2020,
+      cover: "https://ia803405.us.archive.org/17/items/mbid-c5f92ebb-4d93-4ea1-8124-9a6877fe56bc/mbid-c5f92ebb-4d93-4ea1-8124-9a6877fe56bc-29097649939_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "El vals de obrero",
+      artist: "Ska-P",
+      year: 1996,
+      cover: "https://ia903209.us.archive.org/11/items/mbid-c36d7550-b069-4576-b998-012222609a05/mbid-c36d7550-b069-4576-b998-012222609a05-26505279766_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Space Is Only Noise",
+      artist: "Nicolas Jaar",
+      year: 2011,
+      cover: "https://ia600906.us.archive.org/33/items/mbid-d2022e3f-c22f-45c9-a1ab-4b2094d65719/mbid-d2022e3f-c22f-45c9-a1ab-4b2094d65719-23945397989_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "Parts of Life",
+      artist: "Paul Kalkbrenner",
+      year: 2018,
+      cover: "https://ia800703.us.archive.org/0/items/mbid-3a1aba4d-cc4a-43f0-b9a8-3a7a1992aa37/mbid-3a1aba4d-cc4a-43f0-b9a8-3a7a1992aa37-21494152561_thumb500.jpg",
+      link: null
+    },
+    
+    {
+      title: "7",
+      artist: "Paul Kalkbrenner",
+      year: 2015,
+      cover: "https://ia803103.us.archive.org/32/items/mbid-09dfc702-fb7c-4bed-bc50-1074c94717e5/mbid-09dfc702-fb7c-4bed-bc50-1074c94717e5-19110037462_thumb500.jpg",
+      link: null
+    }
+    
+  ];
+</script>
+
+<script src="/assets/js/albums.js?v=3"></script>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Matteo Vilucchio. Almost entirely vibe coded.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript with all functionality -->
+  <script src="/assets/js/main.js?v=1.0.0"></script>
+</body>
+</html>

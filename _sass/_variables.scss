@@ -1,0 +1,58 @@
+// Theme colors and variables
+:root {
+  // Light theme (default)
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --background-color: #fff;
+  --light-gray: #f8f9fa;
+  --border-color: #e9ecef;
+  --dark-gray: #666;
+  --header-text-color: #fff;
+  
+  // Publication-specific variables
+  --secondary-text-color: #666;
+  --primary-text-color: #333;
+  --link-bg-color: #f0f0f0;
+  --link-text-color: #555;
+  --link-hover-bg-color: #e0e0e0;
+  --abstract-bg-color: #f5f5f5;
+  --code-bg-color: #efefef;
+  --button-bg-color: #f0f0f0;
+  --button-hover-bg-color: #e0e0e0;
+  --pdf-bg-color: #fee6e3;
+  --pdf-text-color: #d33a2c;
+  --pdf-hover-bg-color: #fdd8d6;
+}
+
+// Dark theme
+html[data-theme="dark"] {
+  --primary-color: #1a2530;
+  --accent-color: #61dafb;
+  --text-color: #e6e6e6;
+  --background-color: #121212;
+  --light-gray: #2a2a2a;
+  --border-color: #3a3a3a;
+  --dark-gray: #aaa;
+  --header-text-color: #e6e6e6;
+  
+  // Publication-specific variables
+  --secondary-text-color: #bbb;
+  --primary-text-color: #eee;
+  --link-bg-color: #333;
+  --link-text-color: #ddd;
+  --link-hover-bg-color: #444;
+  --abstract-bg-color: #292929;
+  --code-bg-color: #222;
+  --button-bg-color: #333;
+  --button-hover-bg-color: #444;
+  --pdf-bg-color: #4b2421;
+  --pdf-text-color: #ff8a80;
+  --pdf-hover-bg-color: #613530;
+}
+
+// Spacing
+$spacing-unit: 1rem;
+
+// Breakpoints
+$breakpoint-md: 768px;
