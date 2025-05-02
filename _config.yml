@@ -4,7 +4,7 @@ firstname: Matteo
 lastname: Vilucchio
 email: matteo.vilucchio@epfl.ch
 description: >- 
-  PhD Student in Machine Learning and Statistical Physics at EFPL.
+  PhD Student in Machine Learning and Statistical Physics at EPFL.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol, e.g. http://example.com
 # Social media usernames and IDs
