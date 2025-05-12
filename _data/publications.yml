@@ -15,22 +15,20 @@
     organization={PMLR}
   }"
 
-- title: "A High Dimensional Statistical Model for Adversarial Training: Geometry and Trade-offs"
+- title: "A High Dimensional Statistical Model for Adversarial Training: Geometry and Trade-Offs"
   authors: "Kasimir Tanner, Matteo Vilucchio, Bruno Loureiro, Florent Krzakala"
   venue: "The 28th International Conference on Artificial Intelligence and Statistics"
   year: 2025
   type: "publication"
-  # pdf: "https://proceedings.mlr.press/v238/vilucchio24a/vilucchio24a.pdf"
+  pdf: "https://raw.githubusercontent.com/mlresearch/v258/main/assets/tanner25a/tanner25a.pdf"
   abstract: "This work investigates adversarial training in the context of margin-based linear classifiers in the high-dimensional regime where the dimension d and the number of data points n diverge with a fixed ratio. We introduce a tractable mathematical model where the interplay between the data and adversarial attacker geometries can be studied, while capturing the core phenomenology observed in the adversarial robustness literature. Our main theoretical contribution is an exact asymptotic description of the sufficient statistics for the adversarial empirical risk minimiser, under generic convex and non-increasing losses for a Block Feature Model. Our result allow us to precisely characterise which directions in the data are associated with a higher generalisation/robustness trade-off, as defined by a robustness and a usefulness metric. We show that the the presence of multiple different feature types is crucial to the high sample complexity performances of adversarial training. In particular, we unveil the existence of directions which can be defended without penalising accuracy. Finally, we show the advantage of defending non-robust features during training, identifying a uniform protection as an inherently effective defence mechanism."
   code: "https://github.com/IdePHICS/Adversarial-Setting"
-  # bibtex: "@inproceedings{vilucchio2024asymptotic,
-  #   title={Asymptotic characterisation of the performance of robust linear regression in the presence of outliers},
-  #   author={Vilucchio, Matteo and Troiani, Emanuele and Erba, Vittorio and Krzakala, Florent},
-  #   booktitle={International Conference on Artificial Intelligence and Statistics},
-  #   pages={811--819},
-  #   year={2024},
-  #   organization={PMLR}
-  # }"
+  bibtex: "@article{tanner2024high,
+    title={A High Dimensional Statistical Model for Adversarial Training: Geometry and Trade-Offs},
+    author={Tanner, Kasimir and Vilucchio, Matteo and Loureiro, Bruno and Krzakala, Florent},
+    journal={arXiv preprint arXiv:2402.05674},
+    year={2024}
+  }"
 
 - title: "Asymptotics of Non-Convex Generalized Linear Models in High-Dimensions: A proof of the replica formula"
   authors: "Matteo Vilucchio, Yatin Dandi, Cedric Gerbelot, Florent Krzakala"
