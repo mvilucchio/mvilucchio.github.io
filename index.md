@@ -10,7 +10,7 @@ My research focuses on one side to understand the proprites of adversarial/robus
 
 I am lucky to be mentored by [Florent Krzakala](https://florentkrzakala.com/) and to share the lab with all the other [IdePHICS](https://www.epfl.ch/labs/idephics/) memebers. 
 
-Outide of my research I spend most of my time climbing either small rocks, medium walls or big mountains. I also enjoy reading and listening to music.
+Outside of my research I spend most of my time climbing either small rocks, medium walls or big mountains. I also enjoy reading and listening to music.
 
 ### Research Interests
 
