@@ -76,3 +76,12 @@
     journal={arXiv preprint arXiv:2109.14925},
     year={2021}
   }"
+
+- title: "On the existence of consistent adversarial attacks in high-dimensional linear classification"
+  authors: "Matteo Vilucchio, Lenka Zdeborová, Bruno Loureiro"
+  venue: "arXiv"
+  year: 2025
+  type: "preprint"
+  arxiv: "2506.12454"
+  pdf: "https://arxiv.org/pdf/2506.12454"
+  abstract: "What fundamentally distinguishes an adversarial attack from a misclassification due to limited model expressivity or finite data? In this work, we investigate this question in the setting of high-dimensional binary classification, where statistical effects due to limited data availability play a central role. We introduce a new error metric that precisely capture this distinction, quantifying model vulnerability to consistent adversarial attacks -- perturbations that preserve the ground-truth labels. Our main technical contribution is an exact and rigorous asymptotic characterization of these metrics in both well-specified models and latent space models, revealing different vulnerability patterns compared to standard robust error measures. The theoretical results demonstrate that as models become more overparameterized, their vulnerability to label-preserving perturbations grows, offering theoretical insight into the mechanisms underlying model sensitivity to adversarial attacks."
