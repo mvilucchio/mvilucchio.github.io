@@ -55,17 +55,18 @@
 
 - title: "On the Geometry of Regularization in Adversarial Training: High-Dimensional Asymptotics and Generalization Bounds"
   authors: "Matteo Vilucchio, Nikolaos Tsilivis, Bruno Loureiro, Julia Kempe"
-  venue: "arXiv"
-  year: 2024
-  type: "preprint"
-  arxiv: "2410.16073"
-  pdf: "https://arxiv.org/pdf/2410.16073"
+  venue: "Transactions on Machine Learning Research"
+  year: 2026
+  type: "publication"
+  pdf: "https://openreview.net/pdf?id=vkmvuranbm"
   abstract: "Regularization, whether explicit in terms of a penalty in the loss or implicit in the choice of algorithm, is a cornerstone of modern machine learning. Indeed, controlling the complexity of the model class is particularly important when data is scarce, noisy or contaminated, as it translates a statistical belief on the underlying structure of the data. This work investigates the question of how to choose the regularization norm in the context of high-dimensional adversarial training for binary classification. To this end, we first derive an exact asymptotic description of the robust, regularized empirical risk minimizer for various types of adversarial attacks and regularization norms (including non-Lp norms). We complement this analysis with a uniform convergence analysis, deriving bounds on the Rademacher Complexity for this class of problems. Leveraging our theoretical results, we quantitatively characterize the relationship between perturbation size and the optimal choice of norm, confirming the intuition that, in the data scarce regime, the type of regularization becomes increasingly important for adversarial training as perturbations grow in size."
-  bibtex: "@article{vilucchio2024geometry,
+  bibtex: "@article{vilucchio2026geometry,
     title={On the Geometry of Regularization in Adversarial Training: High-Dimensional Asymptotics and Generalization Bounds},
     author={Vilucchio, Matteo and Tsilivis, Nikolaos and Loureiro, Bruno and Kempe, Julia},
-    journal={arXiv preprint arXiv:2410.16073},
-    year={2024}
+    journal={Transactions on Machine Learning Research},
+    year={2026},
+    url={https://openreview.net/forum?id=vkmvuranbm},
+    issn={2835-8856}
   }"
 
 - title: "Genealogical Population-Based Training for Hyperparameter Optimization"
