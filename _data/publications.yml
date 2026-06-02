@@ -69,6 +69,20 @@
     issn={2835-8856}
   }"
 
+- title: "Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning"
+  authors: "Yatin Dandi, Matteo Vilucchio, Luca Arnaboldi, Hugo Tabanelli, Florent Krzakala"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  arxiv: "2605.13612"
+  pdf: "https://arxiv.org/pdf/2605.13612"
+  bibtex: "@article{dandi2026deep,
+    title={Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning},
+    author={Dandi, Yatin and Vilucchio, Matteo and Arnaboldi, Luca and Tabanelli, Hugo and Krzakala, Florent},
+    journal={arXiv preprint arXiv:2605.13612},
+    year={2026}
+  }"
+
 - title: "Genealogical Population-Based Training for Hyperparameter Optimization"
   authors: "Antoine Scardigli, Paul Fournier, Matteo Vilucchio, David Naccache"
   venue: "arXiv"
