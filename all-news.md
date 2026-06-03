@@ -7,7 +7,8 @@ permalink: /news/
 # News & Updates Archive
 
 <div class="news-archive">
-  {% assign sorted_news = site.news | sort: 'date' | reverse %}
+  {% assign visible_news = site.news | where_exp: "news_item", "news_item.date <= site.time" %}
+  {% assign sorted_news = visible_news | sort: 'date' | reverse %}
   
   {% for news_item in sorted_news %}
   <div class="news-item">
