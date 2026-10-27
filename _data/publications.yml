@@ -71,12 +71,10 @@
 
 - title: "Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning"
   authors: "Yatin Dandi, Matteo Vilucchio, Luca Arnaboldi, Hugo Tabanelli, Florent Krzakala"
-  venue: "International Conference on Machine Learning (ICML) 2026"
+  venue: "NeurIPS 2026"
   year: 2026
   type: "publication"
   arxiv: "2605.13612"
-  url: "https://proceedings.mlr.press/v306/vilucchio26a.html"
-  pdf: "https://proceedings.mlr.press/v306/vilucchio26a/vilucchio26a.pdf"
   bibtex: "@article{dandi2026deep,
     title={Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning},
     author={Dandi, Yatin and Vilucchio, Matteo and Arnaboldi, Luca and Tabanelli, Hugo and Krzakala, Florent},
@@ -107,7 +105,7 @@
     year={2021}
   }"
 
-- title: "On the existence of consistent adversarial attacks in high-dimensional linear classification"
+- title: "On the Existence of Consistent Adversarial Attacks in High-Dimensional Linear Classification"
   authors: "Matteo Vilucchio, Lenka Zdeborová, Bruno Loureiro"
   venue: "International Conference on Machine Learning (ICML) 2026, Spotlight"
   year: 2026
