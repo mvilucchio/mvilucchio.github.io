@@ -52,6 +52,10 @@ permalink: /publications/
               <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank">arXiv</a>
             {% endif %}
 
+            {% if pub.url %}
+              <a href="{{ pub.url }}" target="_blank">Paper</a>
+            {% endif %}
+
             {% if pub.doi %}
               <a href="{{ pub.doi }}" target="_blank">DOI</a>
             {% endif %}
